@@ -1,0 +1,93 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../base/reset';
+
+
+.sidebar {
+    background: $primary-gredient-color;
+    color: $light;
+    height: 100vh;
+    overflow-y: auto;
+    .sidebar-header {
+        padding: 20px;
+        p{
+            color: $semiTransparentWhite;
+            font-size: 14px;
+        }
+    }
+}
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+
+  }
+.project-brand{
+    @include elementSize(43px, 93px);
+    object-fit: contain;
+}
+.right-panel {
+    background-color: $rightPanel-color;
+    width: 428px;
+    background: $light 0% 0% no-repeat padding-box;
+    box-shadow: 10px 17px 50px $shadow-effect;
+    margin-top: -21px;
+}
+
+.content{
+    background-color: $dashboard-bg;
+    height: 100vh;
+}
+
+.sm-text{
+    font-size: 12px;
+}
+.qlink-content{
+    p{
+        font-size: 14px;
+        color: $linkTitle;
+    }
+    .sm-text{
+        color: $linkColor;
+    }
+}
+.user-info{
+    .username{
+        font-size: 16px;
+        color: $darkv2;
+    }
+    .sm-text{
+        color: $subcontent;
+    }
+    .comments-footer{
+        p{
+            font-size: 12px;
+            color: $subcontent50Opacity;
+        }
+        a{
+            color: $linkColor;
+            font-size: 12px;
+        }
+    }
+}
+
+.comment-area{
+    height: 337px;
+    overflow-y: scroll;
+    overflow-x: clip;
+
+&::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+
+  &::-webkit-scrollbar-thumb {
+    background: #E2E2ED 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+  }
+
+}

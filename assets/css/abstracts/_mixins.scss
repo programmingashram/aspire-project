@@ -1,0 +1,40 @@
+@import '../abstracts/variables';
+
+@mixin media-breakpoint-up($breakpoint) {
+    @if $breakpoint == xs {
+        @media (min-width: 0) { @content; } 
+    } @else if $breakpoint == sm {
+        @media (min-width: 576px) { @content; }
+    } @else if $breakpoint == md {
+        @media (min-width: 768px) { @content; }
+    } @else if $breakpoint == lg {
+        @media (min-width: 992px) { @content; }
+    } @else if $breakpoint == xl {
+        @media (min-width: 1200px) { @content; }
+    }
+}
+
+
+@mixin custom-button(){
+    background: $primary-gredient-color;
+    color: $light;
+    border-radius: 2px;
+    font-size: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+}
+
+
+@mixin elementSize($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin badge-background($color) {
+    background-color: $color;
+}
+
+@mixin status-background($color) {
+    background-color: $color;
+}

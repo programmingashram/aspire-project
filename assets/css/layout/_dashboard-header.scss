@@ -1,0 +1,9 @@
+@import '../abstracts/variables';
+
+.dashboard-header{
+    background: $light 0% 0% no-repeat padding-box;
+    box-shadow: 10px 17px 50px $shadow-effect;
+    height: 85px;
+    position: relative;
+    z-index: 99999999;
+}

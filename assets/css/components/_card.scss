@@ -1,0 +1,54 @@
+@import '../abstracts/mixins';
+.card{
+    box-shadow: 10px 17px 50px #ABA3D626;
+    border-radius: 2px;
+    .card-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .card-subtitle{
+        font-size: 14px;
+        color: $color-subText !important;
+        font-weight: normal;
+    }
+    &.custom-width{
+        max-width: 100%;
+        @include elementSize(259px, 260px);
+    }
+    &.chart-card {
+        max-width: 100%;
+        @include elementSize(357px, 360px);
+    }
+    .card-img-top{
+        @include elementSize(294px, 100%);
+        border-radius: 0;
+    }
+    .badge{
+        @include elementSize(68px, 68px);
+        border-radius: 100%;
+        &.badge-blue {
+            @include badge-background($badge-blue-bg);
+        }
+        &.badge-purple {
+            @include badge-background($badge-purple-bg);
+        }
+
+        &.badge-red {
+            @include badge-background($badge-red-bg);
+        }
+
+        &.badge-green {
+            @include badge-background($badge-green-bg);
+        }
+        img{
+            @include elementSize(29px, 32px);
+        }
+    }
+    .subText{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .number-txt{
+        font-weight: 600;
+    }
+}

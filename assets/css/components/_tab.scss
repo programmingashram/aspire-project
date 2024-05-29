@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+
+.nav-link{
+    color: $tablinkColor;
+    font-size: 14px;
+    &.active{
+        background-color: transparent !important;
+        color: $darkv2 !important;
+        border-bottom: 2px solid $activeLine;
+        border-radius: 0;
+    }
+    &:hover{
+        color: $darkv2 !important;
+    }
+}
+.tab-content{
+    .tab-pane{
+        .card-body{
+            background: $primary-gredient-color;
+            color: $light;
+        }
+    }
+}

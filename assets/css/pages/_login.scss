@@ -1,0 +1,64 @@
+@import '../abstracts/variables';
+@import '../components/input';
+@import '../abstracts/mixins';
+
+
+.bg-image {
+    background-image: url(../image/bg-image.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @include media-breakpoint-up(xs) {
+        height: auto;
+    }
+    @include media-breakpoint-up(sm) {
+        height: 100vh;
+    }
+    @include media-breakpoint-up(md) {
+        height: auto;
+    }
+    
+}
+
+.form-area {
+    background-color: $light;
+    height: 826px;
+    @include media-breakpoint-up(xs) {
+        height: 100%;
+    }
+    @include media-breakpoint-up(sm) {
+        height: 826px;
+    }
+}
+
+.c-row {
+    height: 100vh;
+    @include media-breakpoint-up(xs) {
+        height: auto;
+    }
+    @include media-breakpoint-up(sm) {
+        height: 100vh;
+    }
+   
+}
+
+.form-banner {
+    background-image: url(../image/form-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 826px;
+    @include media-breakpoint-up(xs) { 
+        height: auto;
+    }
+    @include media-breakpoint-up(sm) {
+        height: 826px;
+    }
+}
+
+.form-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: $light;
+}

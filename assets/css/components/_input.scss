@@ -1,0 +1,43 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.subText{
+    color: $color-subText;
+    font-size: 20px;
+}
+
+.form-control{
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     border-radius: 0;
+     border-color: $color-with-opacity;
+     color:$color-with-opacity;
+     padding-left: 0;
+     width: 401px;
+
+    &.replyBox{
+        @include elementSize(38px, 201px);
+        background: $bg-lightv2 0% 0% no-repeat padding-box;
+        border-radius: 19px;
+        padding-left: 10px;
+        border: none;
+        &::placeholder{
+            color: $placeholderColor;
+            font-size: 14px;
+        }
+    }
+
+    @include media-breakpoint-up(xs) {
+        width: 100% ;
+    }
+
+     &:focus{
+        outline: none;
+        box-shadow: none;
+        border-color: $color-with-opacity;
+    }
+    &::placeholder{
+        color:$color-with-opacity;
+    }
+}

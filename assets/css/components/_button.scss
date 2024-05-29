@@ -1,0 +1,7 @@
+@import  '../abstracts/mixins';
+
+
+.btn-primary{
+    @include custom-button();
+}
+

@@ -1,0 +1,30 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+table{
+    th{
+        color: $color-subText !important;
+        font-weight: 400;
+    }
+    td, th{
+        font-size: 14px;
+    }
+    td{
+        color: $darkv2 !important;
+    }
+    tr{
+        vertical-align: middle
+    }
+
+    .panding{
+        @include elementSize(10px, 10px);
+        @include status-background($pandingColor);
+        border-radius: 100%
+    }
+    .success{
+        @include elementSize(10px, 10px);
+        @include status-background($successColor);
+        border-radius: 100%
+    }
+   
+} 
